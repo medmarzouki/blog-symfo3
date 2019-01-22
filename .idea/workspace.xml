@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d3278ce4-06ed-40ad-8e2c-134b56816caa" name="Default Changelist" comment="" />
+    <list default="true" id="d3278ce4-06ed-40ad-8e2c-134b56816caa" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ClientBundle/Controller/PortfolioController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/ClientBundle/Controller/PortfolioController.php" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +28,7 @@
           <entry key="bat" value="1" />
           <entry key="json" value="1" />
           <entry key="php" value="1" />
+          <entry key="yml" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -31,18 +36,19 @@
           <entry key="JSON" value="1" />
           <entry key="PHP" value="1" />
           <entry key="PLAIN_TEXT" value="1" />
+          <entry key="YAML" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="json" value="4" />
-          <entry key="php" value="89" />
+          <entry key="php" value="202" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JSON" value="4" />
-          <entry key="PHP" value="89" />
+          <entry key="PHP" value="202" />
         </counts>
       </usages-collector>
     </session>
@@ -58,11 +64,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ClientBundle/Controller/PortfolioController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="16" column="16" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
+            <state relative-caret-position="462">
+              <caret line="21" column="52" selection-start-line="21" selection-start-column="43" selection-end-line="21" selection-end-column="52" />
               <folding>
                 <element signature="e#43#100#0#PHP" expanded="true" />
               </folding>
@@ -70,12 +76,19 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/c.bat">
-          <provider selected="true" editor-type-id="text-editor" />
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/config/config.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="242">
+              <caret line="11" column="9" selection-start-line="11" selection-end-line="11" selection-end-column="9" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -140,6 +153,7 @@
     <option name="width" value="1400" />
     <option name="height" value="990" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -152,6 +166,17 @@
             <path>
               <item name="zakstories" type="b2602c69:ProjectViewProjectNode" />
               <item name="zakstories" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zakstories" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zakstories" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zakstories" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zakstories" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="zakstories" type="b2602c69:ProjectViewProjectNode" />
@@ -178,6 +203,23 @@
               <item name="ClientBundle" type="462c0819:PsiDirectoryNode" />
               <item name="Resources" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="zakstories" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zakstories" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="ClientBundle" type="462c0819:PsiDirectoryNode" />
+              <item name="Resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zakstories" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zakstories" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="ClientBundle" type="462c0819:PsiDirectoryNode" />
+              <item name="Resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="Portfolio" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -189,6 +231,11 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\dashboard\php\symfony\zakstories" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -212,23 +259,24 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1548153925477</updated>
-      <workItem from="1548153926873" duration="4292000" />
+      <workItem from="1548153926873" duration="5323000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4292000" />
+    <option name="totallyTimeSpent" value="5323000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1928" y="-8" width="1936" height="1096" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20682302" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20682302" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.49013498" />
+      <window_info anchor="bottom" id="Terminal" weight="0.7030114" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -262,11 +310,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ClientBundle/Controller/PortfolioController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="16" column="16" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
+        <state relative-caret-position="462">
+          <caret line="21" column="52" selection-start-line="21" selection-start-column="43" selection-end-line="21" selection-end-column="52" />
           <folding>
             <element signature="e#43#100#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="11" column="9" selection-start-line="11" selection-end-line="11" selection-end-column="9" />
         </state>
       </provider>
     </entry>
