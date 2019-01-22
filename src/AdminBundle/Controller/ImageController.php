@@ -4,6 +4,8 @@ namespace AdminBundle\Controller;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
+use Symfony\Component\Form\Extension\Core\Type\SubmitType;
+use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\HttpFoundation\Response;
 
 use AdminBundle\Entity\Image;
@@ -37,7 +39,6 @@ class ImageController extends Controller
      */
     public function store() {
 
-        dump("test");
         $em = $this->container->get("doctrine")->getManager();
 
         $image = new Image();
@@ -51,5 +52,27 @@ class ImageController extends Controller
         $em->flush();
 
         return $this->redirectToRoute("image_index");
+    }
+
+
+    /**
+     * @Route("/create", name="image_create")
+     * @Method({"GET"})
+     */
+    public function create()
+    {
+        $image = new Image();
+
+        $form = $this->createFormBuilder($image)
+                     ->add('src', TextType::class)
+                     ->add("alt", TextType::class)
+                     ->add("width", TextType::class)
+                     ->add("height", TextType::class)
+                     ->add("save", SubmitType::class, ["label" => "Enregistrer"])
+                     ->getForm();
+
+        return $this->render("AdminBundle:Image:create.html.twig", [
+                    "form" => $form->createView()
+                ]);
     }
 }
