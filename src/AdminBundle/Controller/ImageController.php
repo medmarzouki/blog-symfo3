@@ -1,11 +1,13 @@
 <?php
 namespace AdminBundle\Controller;
 
+use AdminBundle\Repository\ImageRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
 use Symfony\Component\Form\Extension\Core\Type\SubmitType;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
+use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 
 use AdminBundle\Entity\Image;
@@ -29,7 +31,7 @@ class ImageController extends Controller
     public function index()
     {
         $images = $this->container->get("doctrine")->getManager()->getRepository(Image::class)->findAll();
-        dump($images);
+
         return $this->render("AdminBundle:Image:index.hmtl.twig");
     }
 
@@ -37,19 +39,25 @@ class ImageController extends Controller
      * @Route("/store", name="image_store")
      * @Method({"GET", "POST"})
      */
-    public function store() {
+    public function store(Request $request) {
 
-        $em = $this->container->get("doctrine")->getManager();
+        $form = ((object)$request->request->get("form"));
+        $em = $this->getDoctrine()->getManager();
 
         $image = new Image();
 
-        $image->setAlt("test hello world")
-              ->setSrc("https://www.strategy-business.com/media/image/40297981_slide01.jpg")
-              ->setWidth("480px")
-              ->setHeight("100%");
+        $image->setAlt($form->alt)
+              ->setSrc($form->src)
+              ->setWidth($form->width)
+              ->setHeight($form->height);
 
-        $em->persist($image);
+        $em->merge($image);
+        $image->setAlt("denbasdsqdfs");
+
         $em->flush();
+
+        //dump($em->getRepository(Image::class)->findAll());
+
 
         return $this->redirectToRoute("image_index");
     }
@@ -64,6 +72,7 @@ class ImageController extends Controller
         $image = new Image();
 
         $form = $this->createFormBuilder($image)
+                     ->setAction($this->generateUrl("image_store"))
                      ->add('src', TextType::class)
                      ->add("alt", TextType::class)
                      ->add("width", TextType::class)
